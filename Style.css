@@ -1,0 +1,325 @@
+/* hlavní stránka */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #080808;
+    color: #ffff
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(Obrázky/david-schultz-SrewPUfo2c0-unsplash.jpg);
+    background-size: 100%;
+    border-image-width: 50%;
+
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width:  250px;
+}
+
+nav ul li {
+
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+
+   color: #ffff;
+   text-decoration: none;
+   font-size: 20px;
+   position: relative;
+}
+
+nav ul li a::after {
+
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ca53ba;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+ }
+
+ nav ul li a:hover::after{
+
+width: 100%;
+
+ }
+
+ p
+ {
+    margin-top: 20%;
+    font-size: 30px;
+ }
+
+h1
+ {
+ font-size: 40px;
+ margin-top: 30px;
+ font-size-adjust: calc();
+ }
+
+ /* Sekce o mně*/
+
+ #about {
+    padding: 80px 0;
+    color:#ffff ;
+ }
+
+ .row {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+
+ .about-col-1 {
+
+    flex-basis: 35%;
+ }
+
+ .about-col-1 img{
+width: 100%;
+border-radius: 15px;
+ }
+
+ .about-col-2{
+    flex-basis: 50%;
+ }
+
+ .sub-title {
+ font-size: 60px;
+ font-weight: 200;
+ color: #ca53ba;
+}
+
+.sub-text{
+    font-size: 20px;
+    font-weight: 200;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.reference-tlacitko {
+    background: #ca53ba;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+
+    position: relative;
+    bottom: 100px;
+}
+
+#dovednosti td {
+    width: 33%;
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid gray;
+}
+
+#centrovac {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.vlevo {
+    float: left;
+}
+
+.cistic {
+    clear: both;
+}
+
+#header-omne{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(Obrázky/david-schultz-SrewPUfo2c0-unsplash\ blur.jpg);
+    background-size: 100%;
+    border-image-width: 50%;
+}
+
+/*Reference*/
+
+#reference img {
+    border: none;
+    padding: 4px;
+    box-shadow: black;
+    margin-right: 6px;
+    
+}
+
+.reference-subtext
+{
+    font-size: 60px;
+    font-weight: 200;
+    color: #ca53ba;
+    
+   }
+
+.reference-text
+
+{
+    font-size: 20px;
+    font-weight: 200;
+    color: #ffffff;
+    margin-top: 20px;
+   }
+
+   #header-reference
+   {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(Obrázky/david-schultz-SrewPUfo2c0-unsplash\ blur.jpg);
+    background-size: 100%;
+    border-image-width: 50%;
+}
+
+#Reference
+{
+    margin-top: 40px;
+   }
+
+/* Dovednosti*/
+
+.progress {
+    position: relative;
+    width: 210px;
+    height: 30px;
+    background: #d38fca;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress__fill {
+    width: 0%;
+    height: 100%;
+    background: #ca53ba;
+    transition: all 0.2s;
+  }
+  
+  .progress__text {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font: bold 14px "Quicksand", sans-serif;
+    color: #ffffff;
+  }
+
+  .skill-name {
+    font-size: 20px;
+    font-weight: 200;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+.main-text
+{
+    font-size: 60px;
+    font-weight: 200;
+    color: #ca53ba;
+}
+
+footer {
+    box-sizing: border-box;
+    text-align:center;
+    height: 30px;
+    color: white;
+    background: #414042;
+    padding: 5px 0 0 0;
+    
+}
+
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/*Kontakt*/
+.contact-section{
+    background: url(bg.png) no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+  }
+  .contact-section h1{
+    text-align: center;
+    color: #ffffff;
+  }
+  .border{
+    width: 100px;
+    height: 10px;
+    background: #ca53ba;
+    margin: 40px auto;
+  }
+  
+  .contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  
+  .contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 16px 0;
+    border: 0;
+    background: #ffffff;
+    padding: 20px 40px;
+    outline: none;
+    color: black;
+    border-radius: 25px;
+  }
+  .contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+  }
+  textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+  }
+  .contact-form-btn{
+    float: right;
+    border: 0;
+    background: #ca53ba;
+    color: #fff;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .contact-form-btn:hover{
+    background: #d38fca;
+  }

@@ -1,0 +1,56 @@
+<html lang="cz-cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Osobní portfolio programátorky Kristýny" />
+    <meta name="keywords" content="portfolio, programátor, Kristýna" />
+    <meta name="author" content="Kristýna Luksová" />
+    <title>Kontaktujte mne</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="shortcut icon" href="Obrázky/Ikona.ico" />
+    
+    <script src="js/kontakt.js"></script>
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("-ptInAE8HHGSA10wf");
+})();
+</script>
+</head>
+<body>
+<div id="header-omne"> 
+    <div class = "container"></div>
+    <nav>
+        <img src="Obrázky/Logo.png" class="logo">
+        <ul>
+            <li><a href="Index.html">Domovská stránka</a></li>
+            <li><a href="Omne.html">O mně</a></li>
+            <li><a href="reference.html">Reference</a></li>
+            <li><a href="Dovednosti.html">Dovednosti</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div class="contact-section">
+
+        <h1 class="main-text">Kontaktujte mne</h1>
+        <form class="contact-form" action="index.html" method="post">
+          <input type="text" class="contact-form-text" placeholder="Vaše Jméno">
+          <input type="email" class="contact-form-text" placeholder="Váš email">
+          <textarea class="contact-form-text" placeholder="Vaše Zpráva"></textarea>
+          <input type="submit" class="contact-form-btn"value="Odeslat">
+        </form>
+      </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+<footer>
+    Vytvořila &copy;Kristýna Luksová</a>
+</footer>
+</body>
+</html>
